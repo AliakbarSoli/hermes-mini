@@ -1,0 +1,21 @@
+{
+  "name": "hermes-mini",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-10-01",
+  "triggers": { "crons": ["*/15 * * * *"] },
+  "vars": {
+    "ALLOWED_TELEGRAM_ID": "2006571563",
+    "AI_MODEL": "@cf/meta/llama-3.1-8b-instruct",
+    "REMINDER_HOUR": "8"
+  },
+  "ai": { "binding": "AI" },
+  // بعداً وقتی zone فعال شد: routes روی tg.amirabroun.ir + workers_dev:false
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "hermes-mini",
+      "database_id": "fae0312a-cfb0-4432-a1d4-0dcf1339f76b"
+    }
+  ],
+  "observability": { "enabled": true }
+}
