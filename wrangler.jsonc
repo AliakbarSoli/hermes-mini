@@ -2,10 +2,10 @@
   "name": "hermes-mini",
   "main": "src/index.ts",
   "compatibility_date": "2026-10-01",
-  "triggers": { "crons": ["*/15 * * * *"] },
+  "triggers": { "crons": ["* * * * *"] },
   "vars": {
-    "ALLOWED_TELEGRAM_ID": "2006571563",
-    "AI_MODEL": "@cf/meta/llama-3.1-8b-instruct",
+    "ALLOWED_TELEGRAM_ID": "",
+    "AI_MODEL": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
     "REMINDER_HOUR": "8"
   },
   "ai": { "binding": "AI" },
@@ -14,7 +14,7 @@
     {
       "binding": "DB",
       "database_name": "hermes-mini",
-      "database_id": "fae0312a-cfb0-4432-a1d4-0dcf1339f76b"
+      "database_id": "YOUR_D1_DATABASE_ID"
     }
   ],
   "observability": { "enabled": true }
